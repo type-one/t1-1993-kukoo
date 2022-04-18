@@ -261,6 +261,12 @@ VGA_Ok:  cli
          out     dx,ax
          mov     ax,(128+0)*256+05h  ; End Horizontal Retrace
          out     dx,ax
+		 
+		 ; https://github.com/joncampbell123/dosbox-x/issues/66
+		 ; https://github.com/joncampbell123/dosbox-x/commit/721f08f5b263d836ffe401bd214fb966eca71b0a
+		 ; https://studfile.net/preview/894286/
+		 mov     dx,3dah			 ; fix panning bug higlighted by DOSBox community
+         in      al,dx		         ; read 3DAh to reset latch and set 3c0h to address mode
 
          mov     dx,3c0h             ; Pixel Panning Compatibility...
          mov     al,30h
