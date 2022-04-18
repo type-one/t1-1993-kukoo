@@ -1,0 +1,16 @@
+CREDITS to:
+...........
+
+Laxity for composing this great "The Alibi" C64 chiptune, adapted on AdLib by JCH
+AdLib player by Jens-Christian Huus (JCH/Vibrants)
+
+DOSBox team for the VGA compatibility mode that allows to run the intro.
+
+
+
+
+
+
+
+
+

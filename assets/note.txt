@@ -1,0 +1,10 @@
+Some assets I could find back on my old HDD drive backup.
+
+I've put a playable version of Laxity "The Alibi" Adlib music, in VGM, in D00 and in D01 (an enhanced one).
+You can play it with some dedicated chiptune players with VGM or AdPlug extensions, like XMPlay.
+
+I've included an MS-DOS 8x16 font that is used in the intro to redefine the default text mode font.
+
+The last asset in the intro is an ANSI logo edited with a program called "TheDraw"
+
+https://winworldpc.com/product/the-draw/4x

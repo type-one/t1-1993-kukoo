@@ -1,0 +1,42 @@
+'
+SCREEN 18
+'
+OPEN "o",#1,"c:\masm\data\bingbon3.pan"
+'
+max=464
+n%=0
+FOR j=1.5 TO 11
+  maxx=(30/j)^2
+  FOR i=-30 TO 30 STEP 0.5*j
+    '
+    x=30+i+(j-1)*60
+    '  y=(i/j)^2+max-maxx
+    y=-(i/j)^2+maxx
+    '
+    y=y+(11+29)*16
+    p1%=SHR(SHR(TRUNC(y),4)*82*2,8) AND &h00ff
+    p2%=(SHR(TRUNC(y),4)*82*2) AND &h00ff
+    p3%=(TRUNC(y) AND &h000f)
+    st$=STR$(p1%)+","+STR$(p2%)+","+STR$(p3%)
+    '
+    IF (j>1.5) OR (i>=0)
+      IF n% MOD 9=0
+        IF n%<>0
+          PRINT #1;st$
+        ENDIF
+        PRINT #1;" db ";
+      ELSE
+        PRINT #1;st$+",";
+      ENDIF
+      INC n%
+    ENDIF
+
+    PLOT x,y
+
+
+  NEXT i
+  '
+NEXT j
+'
+PRINT #1;0
+CLOSE #1

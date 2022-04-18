@@ -1,0 +1,28 @@
+
+SCREEN 18
+'
+OPEN "o",#1,"c:\masm\data\sinus.rol"
+'
+n%=0
+FOR i=0 TO 255+64
+  '
+  x=i
+  y=160+SINQ(i/256*360)*159
+  p%=TRUNC(y)*8
+  '
+  IF (n% MOD 27)=0
+    IF n%<>0
+      PRINT #1;p%
+    ENDIF
+    PRINT #1;" dw ";
+  ELSE
+    PRINT #1;p%;",";
+  ENDIF
+  INC n%
+  '
+  PLOT x,y
+  '
+NEXT i
+'
+PRINT #1;"0";
+CLOSE #1
