@@ -7,6 +7,10 @@ MS-Dos
 
 https://demozoo.org/productions/142609/
 
+https://www.youtube.com/watch?v=clWjsemm03A
+
+http://www.sensenstahl.com/untergrund_mirror/bbs/pleasure_access_bbs2a.zip
+
 KUKOO - An Advertising Intro for -= Pleasure Access BBS =-
 
 9.5k ASM pure juice !!! pure VGA Text mode (82x29) ...
@@ -30,7 +34,7 @@ Most of the code was started and written during autumn/winter 1992, the year
 I started Computer Sciences at the University and when I left my Atari ST
 for the PC, upgraded from a 286/20 mhz to a 486/33 mhz motherboard.  It was
 also the first year of my life where I did have access to the Internet as 
-a student.
+a student.  I was 18 years old at that time.
 
 The released intro was compressed using PKLITE (from what I remember)
 
